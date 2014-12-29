@@ -1,12 +1,12 @@
 package de.JeterLP.ChatManager;
 
+import com.google.common.base.Joiner;
 import de.JeterLP.ChatManager.Command.BaseCommand;
 import de.JeterLP.ChatManager.Command.CommandArgs;
 import de.JeterLP.ChatManager.Command.CommandHandler;
 import de.JeterLP.ChatManager.Command.CommandResult;
 import de.JeterLP.ChatManager.Command.HelpPage;
 import de.JeterLP.ChatManager.Utils.Locales;
-import net.minecraft.util.com.google.common.base.Joiner;
 import org.bukkit.Bukkit;
 import org.bukkit.command.BlockCommandSender;
 import org.bukkit.command.CommandSender;

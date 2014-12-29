@@ -3,8 +3,8 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>de.JeterLP</groupId>
   <artifactId>ChatEx</artifactId>
-  <name>ChatEx</name>
-  <version>1.1.1</version>
+  <name>Chat18Ex</name>
+  <version>1.0.1-SNAPSHOT</version>
   <description>ChatManagement plugin for Bukkit</description>
   <inceptionYear>2013</inceptionYear>
   <scm>
@@ -68,20 +68,38 @@
   <dependencies>
     <dependency>
       <groupId>org.bukkit</groupId>
+      <artifactId>bukkit</artifactId>
+      <version>1.8-R0.1-SNAPSHOT</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.spigotmc</groupId>
+      <artifactId>spigot-api</artifactId>
+      <version>1.8-R0.1-SNAPSHOT</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.spigotmc</groupId>
+      <artifactId>minecraft-server</artifactId>
+      <version>1.8-SNAPSHOT</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.bukkit</groupId>
       <artifactId>craftbukkit</artifactId>
-      <version>1.7.5-R0.1-SNAPSHOT</version>
-      <scope>compile</scope>
+      <version>1.8-R0.1-SNAPSHOT</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>net.milkbowl.vault</groupId>
       <artifactId>Vault</artifactId>
-      <version>1.4.1</version>
-      <scope>compile</scope>
+      <version>1.5.1</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>ru.tehkode</groupId>
       <artifactId>PermissionsEx</artifactId>
-      <version>1.22.1</version>
+      <version>1.23</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -92,15 +110,17 @@
     </dependency>
     <dependency>
       <groupId>com.massivecraft</groupId>
-      <artifactId>factions</artifactId>
-      <version>1.0.0</version>
-      <scope>compile</scope>
+      <artifactId>MassiveCore</artifactId>
+      <version>2.7.5</version>
+      <scope>system</scope>
+      <systemPath>G:/Users/Relicum/Downloads/Factions-2.7.5/Factions-2.7.5/MassiveCore.jar</systemPath>
     </dependency>
     <dependency>
       <groupId>com.massivecraft</groupId>
-      <artifactId>mcore</artifactId>
-      <version>1.0.0</version>
-      <scope>compile</scope>
+      <artifactId>Factions</artifactId>
+      <version>2.7.5</version>
+      <scope>system</scope>
+      <systemPath>G:/Users/Relicum/Downloads/Factions-2.7.5/Factions-2.7.5/Factions.jar</systemPath>
     </dependency>
   </dependencies>
   <distributionManagement>
@@ -115,8 +135,8 @@
   </distributionManagement>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.7</maven.compiler.source>
-    <maven.compiler.target>1.7</maven.compiler.target>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
 </project>
 

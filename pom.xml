@@ -3,9 +3,9 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>de.JeterLP</groupId>
     <artifactId>ChatEx</artifactId>
-    <name>ChatEx</name>
+    <name>Chat18Ex</name>
     <inceptionYear>2013</inceptionYear>
-    <version>1.1.2-SNAPSHOT</version>
+    <version>1.0.1-SNAPSHOT</version>
     <description>ChatManagement plugin for Bukkit</description>  
     
     <scm>
@@ -80,38 +80,64 @@
             <url>http://jeterlp.admincmd.com/maven-repo/</url>
         </repository>      
     </repositories>
-    <dependencies>      
+    <dependencies>
+        <dependency>
+            <groupId>org.bukkit</groupId>
+            <artifactId>bukkit</artifactId>
+            <version>1.8-R0.1-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot-api</artifactId>
+            <version>1.8-R0.1-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>minecraft-server</artifactId>
+            <version>1.8-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
         <dependency>
             <groupId>org.bukkit</groupId>
             <artifactId>craftbukkit</artifactId>
-            <version>1.7.5-R0.1-SNAPSHOT</version>
+            <version>1.8-R0.1-SNAPSHOT</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>net.milkbowl.vault</groupId>
             <artifactId>Vault</artifactId>
-            <version>1.4.1</version>
+            <version>1.5.1</version>
+            <type>jar</type>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>ru.tehkode</groupId>
             <artifactId>PermissionsEx</artifactId>
-            <version>1.22.1</version>
+            <version>1.23</version>
+            <scope>provided</scope>
         </dependency>  
         <dependency>
             <groupId>de.bananaco</groupId>
             <artifactId>bPermissions</artifactId>
             <version>2.9.4</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.massivecraft</groupId>
-            <artifactId>factions</artifactId>
-            <version>1.0.0</version>
+            <artifactId>MassiveCore</artifactId>
+            <version>2.7.5</version>
+            <scope>system</scope>
+            <systemPath>G:/Users/Relicum/Downloads/Factions-2.7.5/Factions-2.7.5/MassiveCore.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>com.massivecraft</groupId>
-            <artifactId>mcore</artifactId>
-            <version>1.0.0</version>
+            <artifactId>Factions</artifactId>
+            <version>2.7.5</version>
+            <scope>system</scope>
+            <systemPath>G:/Users/Relicum/Downloads/Factions-2.7.5/Factions-2.7.5/Factions.jar</systemPath>
         </dependency>
-        
         <dependency>
             <groupId>de.TheJeterLP.Bukkit</groupId>
             <artifactId>Updater</artifactId>
@@ -120,8 +146,8 @@
         </dependency>
     </dependencies>
     <properties>
-        <maven.compiler.source>1.7</maven.compiler.source>
-        <maven.compiler.target>1.7</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
         

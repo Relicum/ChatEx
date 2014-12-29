@@ -1,21 +1,18 @@
 package de.JeterLP.ChatManager.Utils;
 
 import com.massivecraft.factions.entity.Faction;
-import com.massivecraft.factions.entity.UPlayer;
+import com.massivecraft.factions.entity.MPlayer;
 import de.JeterLP.ChatManager.ChatEX;
 import de.JeterLP.ChatManager.ChatListener;
 import de.JeterLP.ChatManager.Plugins.PluginManager;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Calendar;
-import java.util.HashMap;
-import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * @author TheJeterLP
@@ -213,8 +210,8 @@ public class Utils {
         if (!HookManager.checkFactions()) {
             return msg.replace("%faction", "");
         }
-        final UPlayer uplayer = UPlayer.get(player);
-        final Faction faction = uplayer.getFaction();
+        final MPlayer mPlayer = MPlayer.get(player);
+        final Faction faction = mPlayer.getFaction();
         return msg.replace("%faction", faction.getName());
     }
     

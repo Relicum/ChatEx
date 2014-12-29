@@ -3,12 +3,12 @@ package de.JeterLP.ChatManager;
 import de.JeterLP.ChatManager.Command.CommandManager;
 import de.JeterLP.ChatManager.Plugins.PermissionsPlugin;
 import de.JeterLP.ChatManager.Plugins.PluginManager;
-import de.JeterLP.ChatManager.Utils.*;
 import de.JeterLP.ChatManager.Utils.Config;
+import de.JeterLP.ChatManager.Utils.Locales;
 import de.JeterLP.ChatManager.Utils.Utils;
-import de.thejeterlp.bukkit.updater.Updater;
-import java.io.File;
 import org.bukkit.plugin.java.JavaPlugin;
+
+import java.io.File;
 
 /**
  * @author TheJeterLP
@@ -36,11 +36,7 @@ public class ChatEX extends JavaPlugin {
                 saveResource("locales" + File.separator + Config.LOCALE.getString() + "_readme.txt", true);
             }
             manager = new PluginManager();
-            debug("Starting Metrics/MCStats...");
-            new Metrics(this).start();
-            debug("Starting updater...");
-            Updater u = new Updater(this, 65863, "chatex");
-            u.search();
+
             getLogger().info("Successfully hooked into: " + PluginManager.getInstance().getName());
             debug("registering Listener...");
             if (!Utils.registerListener()) {

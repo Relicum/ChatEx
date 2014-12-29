@@ -1,12 +1,13 @@
 package de.JeterLP.ChatManager.Utils;
 
 import de.JeterLP.ChatManager.ChatEX;
+import org.apache.commons.io.FileUtils;
+import org.bukkit.command.CommandSender;
+import org.bukkit.configuration.file.YamlConfiguration;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.Map;
-import net.minecraft.util.org.apache.commons.io.FileUtils;
-import org.bukkit.command.CommandSender;
-import org.bukkit.configuration.file.YamlConfiguration;
 
 /**
  * @author TheJeterLP
