@@ -18,11 +18,6 @@ public class HookManager {
         return plugin != null && plugin.isEnabled();
     }
 
-    public static boolean checkBPerms() {
-        Plugin plugin = Bukkit.getServer().getPluginManager().getPlugin("bPermissions");
-        return plugin != null && plugin.isEnabled();
-    }
-
     public static boolean checkFactions() {
         Plugin plugin = Bukkit.getServer().getPluginManager().getPlugin("Factions");
         return plugin != null && plugin.isEnabled();
