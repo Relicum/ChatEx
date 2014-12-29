@@ -5,7 +5,7 @@
     <artifactId>ChatEx</artifactId>
     <name>Chat18Ex</name>
     <inceptionYear>2013</inceptionYear>
-    <version>1.0.2-SNAPSHOT</version>
+    <version>1.0.3-SNAPSHOT</version>
     <description>ChatManagement plugin for Bukkit</description>  
 
        
