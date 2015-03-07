@@ -5,10 +5,9 @@
     <artifactId>ChatEx</artifactId>
     <name>Chat18Ex</name>
     <inceptionYear>2013</inceptionYear>
-    <version>1.0.3-SNAPSHOT</version>
+    <version>1.0.4-SNAPSHOT</version>
     <description>ChatManagement plugin for Bukkit</description>  
 
-       
     <build>
         <defaultGoal>clean install</defaultGoal>
         <resources>
@@ -47,53 +46,70 @@
                 <artifactId>maven-jar-plugin</artifactId>
                 <version>2.4</version>
                 <configuration>
-                    <outputDirectory>G:\Users\Relicum\Desktop\MCTest\plugins</outputDirectory>
+                    <outputDirectory>G:\Users\Relicum\Desktop\UHC\plugins</outputDirectory>
                 </configuration>
             </plugin>
         </plugins>
     </build>
     <repositories>
         <repository>
+            <id>spigot-repo</id>
+            <url>https://hub.spigotmc.org/nexus/content/groups/public/</url>
+        </repository>
+        <repository>
+            <id>md_5-repo</id>
+            <url>http://repo.md-5.net/content/groups/public/</url>
+        </repository>
+        <repository>
+            <id>md_5-snapshots</id>
+            <url>http://repo.md-5.net/content/repositories/snapshots/</url>
+        </repository>
+        <repository>
             <id>vault-repo</id>
             <url>http://nexus.theyeticave.net/content/repositories/pub_releases/</url>
+        </repository>
+        <repository>
+            <id>pex-repo</id>
+            <name>PermissionsEx Repository</name>
+            <url>http://pex-repo.aoeu.xyz/</url>
         </repository>
     </repositories>
     <dependencies>
         <dependency>
             <groupId>org.bukkit</groupId>
             <artifactId>bukkit</artifactId>
-            <version>1.8-R0.1-SNAPSHOT</version>
+            <version>1.8.3-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
-            <version>1.8-R0.1-SNAPSHOT</version>
+            <version>1.8.3-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>minecraft-server</artifactId>
-            <version>1.8-SNAPSHOT</version>
+            <version>1.8.3-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.bukkit</groupId>
             <artifactId>craftbukkit</artifactId>
-            <version>1.8-R0.1-SNAPSHOT</version>
+            <version>1.8.3-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>net.milkbowl.vault</groupId>
             <artifactId>Vault</artifactId>
-            <version>1.5.1</version>
+            <version>1.5.2</version>
             <type>jar</type>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>ru.tehkode</groupId>
             <artifactId>PermissionsEx</artifactId>
-            <version>1.23</version>
+            <version>1.23.2-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>

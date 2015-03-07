@@ -1,4 +1,4 @@
-ChatEx for Spigot 1.8
+ChatEx for Spigot 1.8.3
 ================================
 ```
 Recode of a recode, This is been modified to work with the latest Spigot 1.8.
