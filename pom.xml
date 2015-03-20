@@ -6,7 +6,7 @@
     <name>Chat18Ex</name>
     <inceptionYear>2013</inceptionYear>
     <version>1.0.4-SNAPSHOT</version>
-    <description>ChatManagement plugin for Bukkit</description>  
+    <description>ChatManagement plugin for Bukkit Plugins</description>
 
     <build>
         <defaultGoal>clean install</defaultGoal>
